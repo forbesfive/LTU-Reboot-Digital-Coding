@@ -1,9 +1,28 @@
-body{
-    background:yellow;
-}
-
 .logo{
     max-width: 200px;
     display: block;
     margin:0 auto;
+}
+main{
+    width:calc(75% - 60px);
+    float:left;
+    background: red;
+    height: 200px;
+    padding:30px;
+}
+
+aside{
+    width:calc(25% - 60px);
+    float:left;
+    background: blue;
+    height: 200px;
+    padding:30px;
+}
+
+@media only screen and (max-width: 600px) {
+    main,
+    aside{
+        float:none;
+        width: calc(100% - 60px);
+    }
 }
