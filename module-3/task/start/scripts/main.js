@@ -284,7 +284,7 @@ function removeChar(strValue){
     return strValue.substr(firstTrim,trimUpto);
 }
 
-console.log(removeChar('Jonathan'));
+// console.log(removeChar('Jonathan'));
 
 //can access a string array by key
 // strValue = 'Jonathan';
@@ -298,3 +298,109 @@ console.log(removeChar('Jonathan'));
 // console.log(strValue[5]);
 // console.log(strValue[6]);
 // console.log(strValue[7]);
+
+//30/06/2021
+/*## Task 10
+
+1. Create an array and each item will be the variables we created earlier :
+
+- productName
+- price
+- quantity
+- inStock
+- discountAmount*/
+
+//##Alex Task 10
+let arrRainbow = ['red','orange','yellow','green','blue','indigo','violet'];
+
+// console.log(arrRainbow[0]); //red
+// console.log(arrRainbow[3]); //green
+// console.log(arrRainbow[6]); //violet
+// console.log(arrRainbow.length);
+
+/*## Task 12
+
+1.  Create an object and with the properties
+
+    - productName
+    - price
+    - quantity
+    - inStock
+    - discountApplied
+
+    let objectName = {
+    property : value
+    }*/
+
+let objProduct = {
+    productName: 'Tinned Beans',
+    price:0.99,
+    quantity:4,
+    inStock:true,
+    discountApplied:0,
+};
+
+// objProduct.productName = 'Garlic Bread'; 
+// objProduct['productName'] = 'Chocolate Bar';
+
+// console.log(objProduct.productName); //dot notation
+// console.log(objProduct['productName']); //bracket notation
+
+
+/*## Task 15
+
+1. create a new property for the object without editing the original object*/
+
+objProduct['weight'] = 0.5;
+
+// console.log(objProduct);
+
+//Arrays & loops
+// for(counter = 0; counter < 10; counter++){
+//     // if(counter % 2 == 1){
+//         console.log(counter);
+//     // }
+// }
+
+// for(counter = 0; counter < arrRainbow.length; counter++){
+//     let colour = arrRainbow[counter];
+//     console.log(counter + ': ' + colour);
+// }
+
+// for(counter = 0; counter < 30; counter++){
+//     if(counter % 3 == 0 && counter % 5 ==0){
+//         console.log('FizzBuzz');
+//     } else if (counter % 5 == 0) {
+//         console.log('Buzz');
+//     } else if (counter % 3 == 0){
+//         console.log('Fizz');
+//     } else {
+//         console.log(counter);
+//     }
+// }
+
+// let done = 'done';
+// for(counter = 0; counter < done.length; counter++){
+//     let letter = done[counter];
+//     console.log(letter);
+// }
+
+/*## Task 16
+
+1. Use a for loop and console.log out the 7 times table
+2. Create a function and place the for loop inside it
+3. Call the function*/
+
+function outputTimesTable(multipleOf){
+    for(counter = 1; counter <= 12;  counter++){
+        let sum = counter * multipleOf;
+        console.log(counter + ' * ' + multiplier + ' = ' + sum);
+    }
+}
+
+// outputTimesTable(7);
+
+//output all of the times table
+for(multiplier = 1; multiplier <=12; multiplier++){
+    outputTimesTable(multiplier);
+}
